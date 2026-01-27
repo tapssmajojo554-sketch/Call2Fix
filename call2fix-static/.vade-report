@@ -1,0 +1,45 @@
+# Vercel Web Analytics Implementation
+
+## Summary
+Successfully implemented Vercel Web Analytics for the Call2Fix static HTML website.
+
+## Changes Made
+
+### Modified Files:
+- **index.html** - Added Vercel Web Analytics tracking scripts to the `<head>` section
+
+## Implementation Details
+
+Added the following analytics code to the HTML file:
+```html
+<!-- Vercel Web Analytics -->
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+```
+
+The scripts were inserted in the `<head>` section, after the existing manus debug collector script and before the closing `</head>` tag.
+
+## Why This Approach?
+
+For plain HTML sites, Vercel Web Analytics requires adding two script tags:
+1. An initialization script that sets up the `window.va` function
+2. A deferred script that loads the analytics tracking from `/_vercel/insights/script.js`
+
+This implementation follows the official Vercel Web Analytics documentation for HTML sites.
+
+## Next Steps
+
+To enable analytics:
+1. Deploy this updated site to Vercel
+2. Enable Web Analytics in the Vercel dashboard (Project Settings → Analytics → Enable)
+3. After deployment, analytics data will start being collected automatically
+4. Verify by checking the Network tab in browser dev tools for requests to `/_vercel/insights/view`
+
+## Notes
+
+- No package installation was needed as this is a plain HTML site
+- The analytics script is loaded with `defer` attribute for optimal performance
+- Route tracking is not available for plain HTML implementations (only for framework-specific implementations)
+- The implementation requires no changes to the existing JavaScript or CSS assets
