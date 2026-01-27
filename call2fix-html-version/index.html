@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Call2Fix Plumbing & Electrical - Cape Town</title>
+  <meta name="description" content="Professional plumbing and electrical services in Cape Town. 24/7 emergency response. Licensed technicians. Transparent pricing.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar show">
+    <div class="container">
+      <div class="top-bar-content">
+        <div class="top-bar-left">
+          <span>📞 24/7 Emergency Service</span>
+          <span>📍 Serving Greater Cape Town</span>
+        </div>
+        <div class="top-bar-right">
+          <a href="tel:0215550123">021 555 0123</a>
+          <span>|</span>
+          <a href="mailto:tapssmajojo554@gmail.com">tapssmajojo554@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <img src="images/call2fix-logo.png" alt="Call2Fix Logo">
+        </div>
+        
+        <nav>
+          <a href="#home" data-page="home" class="active">Home</a>
+          <a href="#services" data-page="services">Services</a>
+          <a href="#emergency" data-page="emergency">Emergency</a>
+          <a href="#areas" data-page="areas">Service Areas</a>
+          <a href="#about" data-page="about">About Us</a>
+          <a href="#contact" data-page="contact">Contact</a>
+          <button class="btn btn-primary" onclick="openWhatsApp('+27740642297', '')">
+            📱 WhatsApp
+          </button>
+        </nav>
+        
+        <button class="mobile-menu-toggle">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="page-content">
+    <!-- Pages load here -->
+  </main>
+
+  <!-- Live Chat Widget -->
+  <div class="chat-widget" id="chat-widget">
+    <div class="chat-header">
+      <div>
+        <h3>Call2Fix Support</h3>
+        <p>Usually replies instantly</p>
+      </div>
+      <button class="chat-close">✕</button>
+    </div>
+    
+    <div class="chat-messages" id="chat-messages">
+      <div class="chat-message bot">
+        <div class="chat-message-content">👋 Hi! Welcome to Call2Fix. How can we help you today?</div>
+      </div>
+    </div>
+    
+    <div class="chat-input-area">
+      <form class="chat-input-form" id="chat-form">
+        <input 
+          type="text" 
+          id="chat-input" 
+          placeholder="Type your message..." 
+          required
+        >
+        <button type="submit">📤</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating Buttons -->
+  <div class="floating-buttons">
+    <button class="float-btn float-btn-emergency" id="float-emergency" title="Emergency">
+      📞
+    </button>
+    <button class="float-btn float-btn-chat" id="float-chat" title="Chat">
+      💬
+    </button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

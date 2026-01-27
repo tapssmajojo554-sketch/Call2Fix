@@ -1,0 +1,155 @@
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Plumbing & Electrical<br><span style="color: #dc143c;">Done Right.</span></h1>
+      <p>Call2Fix: Your trusted partner for professional plumbing and electrical services in Cape Town. 24/7 emergency response, licensed technicians, and transparent pricing.</p>
+      
+      <div class="hero-buttons">
+        <button class="btn btn-primary btn-large" onclick="openWhatsApp('+27740642297', '')">
+          Get Instant Quote →
+        </button>
+        <button class="btn btn-outline btn-large" onclick="openWhatsApp('+27740642297', '')">
+          📱 WhatsApp Now
+        </button>
+      </div>
+
+      <!-- Service Area Checker -->
+      <div class="service-checker">
+        <h3>Check Availability</h3>
+        <p style="font-size: 14px; color: #666; margin-bottom: 15px;">Enter your postal code to see if we service your area and get estimated response times.</p>
+        <input type="text" id="postal-code" placeholder="e.g. 8001" maxlength="4">
+        <button class="btn btn-primary" id="check-availability">Check</button>
+      </div>
+
+      <!-- Features -->
+      <div class="features">
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h4>Licensed & Insured</h4>
+          <p>Fully qualified technicians with industry certifications</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h4>24/7 Emergency</h4>
+          <p>Rapid response to urgent plumbing and electrical issues</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💰</div>
+          <h4>Transparent Pricing</h4>
+          <p>No hidden fees. Clear quotes before we start work</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Preview -->
+<section class="section-padding">
+  <div class="container">
+    <h2 style="text-align: center; color: #003da5; margin-bottom: 10px;">Our Services</h2>
+    <p style="text-align: center; color: #666; margin-bottom: 40px;">From emergency repairs to complete installations</p>
+    
+    <div class="services-grid">
+      <!-- Emergency Plumbing -->
+      <div class="service-card">
+        <img src="images/service-emergency.jpg" alt="Emergency Plumbing">
+        <div class="service-card-content">
+          <h3>Emergency Plumbing</h3>
+          <p>Burst pipes, leaks, and urgent issues resolved fast</p>
+          <ul>
+            <li>24/7 Response</li>
+            <li>Expert Diagnosis</li>
+            <li>Quick Repairs</li>
+          </ul>
+          <div class="service-price">R450 - R1,200</div>
+          <button class="btn btn-primary" style="width: 100%;">Get Quote</button>
+        </div>
+      </div>
+
+      <!-- Leak Detection -->
+      <div class="service-card">
+        <img src="images/service-leak.jpg" alt="Leak Detection">
+        <div class="service-card-content">
+          <h3>Leak Detection</h3>
+          <p>Find and fix hidden leaks before they cause damage</p>
+          <ul>
+            <li>Advanced Detection</li>
+            <li>Precise Repairs</li>
+            <li>Water Saving</li>
+          </ul>
+          <div class="service-price">R350 - R800</div>
+          <button class="btn btn-primary" style="width: 100%;">Get Quote</button>
+        </div>
+      </div>
+
+      <!-- Drain Cleaning -->
+      <div class="service-card">
+        <img src="images/service-drain.jpg" alt="Drain Cleaning">
+        <div class="service-card-content">
+          <h3>Drain Cleaning</h3>
+          <p>Clear blockages and maintain healthy drainage systems</p>
+          <ul>
+            <li>Professional Cleaning</li>
+            <li>Preventive Care</li>
+            <li>Guaranteed Results</li>
+          </ul>
+          <div class="service-price">R250 - R600</div>
+          <button class="btn btn-primary" style="width: 100%;">Get Quote</button>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 40px;">
+      <button class="btn btn-primary btn-large" onclick="loadPage('services')">
+        View All Services →
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="section-padding bg-light">
+  <div class="container">
+    <h2 style="text-align: center; color: #003da5; margin-bottom: 40px;">Why Choose Call2Fix?</h2>
+    
+    <div class="services-grid">
+      <div class="feature-card">
+        <div class="feature-icon" style="font-size: 50px;">7️⃣</div>
+        <h4>7+ Years Experience</h4>
+        <p>Serving Cape Town with professional, reliable service</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="font-size: 50px;">👨‍🔧</div>
+        <h4>Expert Technicians</h4>
+        <p>Fully licensed and continuously trained professionals</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="font-size: 50px;">⏱️</div>
+        <h4>Fast Response</h4>
+        <p>30-45 minute response time for emergencies</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="font-size: 50px;">✅</div>
+        <h4>Quality Guarantee</h4>
+        <p>All work backed by our satisfaction guarantee</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section-padding bg-primary text-white" style="text-align: center;">
+  <div class="container">
+    <h2 style="margin-bottom: 20px;">Ready to Experience Better Plumbing?</h2>
+    <p style="margin-bottom: 30px; font-size: 18px;">Whether it's a small leak or a major renovation, our team is ready to help. Get a free quote today.</p>
+    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+      <button class="btn btn-secondary btn-large" onclick="openWhatsApp('+27740642297', '')">
+        Chat on WhatsApp
+      </button>
+      <button class="btn btn-outline btn-large" onclick="openWhatsApp('+27676095679', 'EMERGENCY PLUMBING NEEDED URGENTLY!')">
+        Emergency: WhatsApp
+      </button>
+    </div>
+  </div>
+</section>
